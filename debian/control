@@ -3,7 +3,17 @@ Priority: extra
 Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
 XSBC-Original-Maintainer: Scarlett Clark <scarlett@scarlettgatelyclark.com>
 Build-Depends: debhelper (>= 9.0.0), cmake, pkg-kde-tools,
- extra-cmake-modules (>= 0.0.13), pkg-kde-tools
+ extra-cmake-modules (>= 0.0.13), pkg-kde-tools,
+ libkf5i18n-dev (>= 4.99.0), libkf5config-dev (>= 4.99.0),
+ libkf5guiaddons-dev (>= 4.99.0), libkf5widgetsaddons-dev (>= 4.99.0),
+ libkf5service-dev (>= 4.99.0), libkf5completion-dev (>= 4.99.0),
+ libkf5style-dev (>= 4.99.0), libkf5windowsystem-dev (>= 4.99.0),
+ qtbase5-dev, libqt5x11extras5-dev, libx11-dev, libxcb1-dev,
+ libkf5coreaddons-dev (>= 4.99.0), libkf5dbusaddons-dev (>= 4.99.0),
+ libkf5configwidgets-dev (>= 4.99.0), libkf5iconthemes-dev (>= 4.99.0),
+ libkf5auth-dev (>= 4.99.0), libkf5codecs-dev (>= 4.99.0),
+ libkf5itemviews-dev (>= 4.99.0),
+ kwin-dev (>= 4.96.0), pkg-config
 Standards-Version: 3.9.5
 Section: kde
 Homepage: https://projects.kde.org/projects/kde/workspace/oxygen
