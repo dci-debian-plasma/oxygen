@@ -1,0 +1,67 @@
+Source: oxygen
+Priority: extra
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+XSBC-Original-Maintainer: Scarlett Clark <scarlett@scarlettgatelyclark.com>
+Build-Depends: debhelper (>= 9.0.0), cmake, pkg-kde-tools,
+ extra-cmake-modules (>= 0.0.13), pkg-kde-tools
+Standards-Version: 3.9.5
+Section: libs
+Homepage: https://projects.kde.org/projects/kde/workspace/oxygen
+
+Package: oxygen-sounds
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Sounds for the Oxygen desktop theme
+ The Oxygen desktop theme is used by Plasma and other KDE Software.
+ .
+ This package contains the sounds.
+
+Package: kwin-decoration-oxygen
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: KWin decoration for the Oxygen desktop theme
+ The Oxygen desktop theme is used by Plasma and other KDE Software.
+ .
+ This package contains the KWin decoration and settings modules.
+
+Package: kde-style-oxygen-qt5
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt decoration for the Oxygen desktop theme
+ The Oxygen desktop theme is used by Plasma and other KDE Software.
+ .
+ This package contains the Qt 5 widget theme.
+
+Package: liboxygenstyle5-5
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: style library for the Oxygen desktop theme
+ The Oxygen desktop theme is used by Plasma and other KDE Software.
+ .
+ This package contains the private library used by the widget theme
+ and KWin style.
+
+Package: liboxygenstyleconfig5-5
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: style library configuration for the Oxygen desktop theme
+ The Oxygen desktop theme is used by Plasma and other KDE Software.
+ .
+ This package contains the private library used to configure the widget theme
+ and KWin style.
+
+Package: oxygen-dbg
+Section: debug
+Architecture: any
+Recommends: qtbase5-dbg
+Depends: ${misc:Depends}, kwin (= ${binary:Version})
+Description: KDE window manager - debug files
+ KWin (pronounced as one syllable "kwin") is the window
+ manager for the KDE Plasma Desktop. It gives you complete
+ control over your windows, making sure they're not in the way
+ but aid you in your task. It paints the window decoration,
+ the bar on top of every window with (configurable) buttons
+ like close, maximize and minimize. It also handles placing
+ of windows and switching between them.
+ .
+ This package contains the debugging symbols.
