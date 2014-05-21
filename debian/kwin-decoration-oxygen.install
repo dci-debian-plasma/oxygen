@@ -1,2 +1,3 @@
 usr/lib/*/qt5/plugins/kwin/kdecorations/kwin3_oxygen.so
 usr/lib/*/qt5/plugins/kwin/kdecorations/config/kwin_oxygen_config.so
+usr/bin/oxygen-settings5
