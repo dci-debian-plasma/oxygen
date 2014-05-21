@@ -1,6 +1,6 @@
 #demo files
-debian/tmp/usr/bin/oxygen-shadow-demo5
-debian/tmp/usr/bin/oxygen-demo5
+./usr/bin/oxygen-shadow-demo5
+./usr/bin/oxygen-demo5
 ./usr/share/icons/KDE_Classic/cursors/00000000000000020006000e7e9ffc3f
 ./usr/share/icons/KDE_Classic/cursors/00008160000006810000408080010102
 ./usr/share/icons/KDE_Classic/cursors/08e8e1c95fe2fc01f976f1e063a24ccd
