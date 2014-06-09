@@ -1,5 +1,6 @@
-oxygen (4.96.0-0ubuntu1) UNRELEASED; urgency=medium
+oxygen (4:4.97.0-0ubuntu1) UNRELEASED; urgency=medium
 
   * Initial release.
+  * New upstream beta release
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 15 May 2014 15:37:53 +0000
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 09 Jun 2014 10:26:37 +0100
