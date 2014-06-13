@@ -64,7 +64,11 @@ Package: oxygen-dbg
 Section: debug
 Architecture: any
 Recommends: qtbase5-dbg
-Depends: ${misc:Depends}
+Depends: liboxygenstyleconfig5-5 (= ${binary:Version}) | 
+         liboxygenstyle5-5 (= ${binary:Version}) |
+         kde-style-oxygen-qt5 (= ${binary:Version}) |
+         kwin-decoration-oxygen (= ${binary:Version}),
+         ${misc:Depends}
 Description: debugging symbols for the Oxygen desktop theme
  The Oxygen desktop theme is used by Plasma and other KDE Software.
  .
