@@ -1,3 +1,5 @@
 usr/lib/*/qt5/plugins/styles/oxygen.so
 usr/lib/*/qt5/plugins/kstyle_oxygen_config.so
 usr/share/kstyle/themes/oxygen.themerc
+usr/share/locale/*/LC_MESSAGES/oxygen_style_config.mo
+usr/share/locale/*/LC_MESSAGES/oxygen_style_demo.mo
