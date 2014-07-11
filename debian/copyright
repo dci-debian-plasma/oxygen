@@ -3,7 +3,7 @@ Upstream-Name: kwin
 Source: https://projects.kde.org/projects/kde/workspace/oxygen
 
 Files: *
-Copyright: 
+Copyright:
  2007 Casper Boemann <cbr@boemann.dk>
  2007 Fredrik Heglund <fredrik@kde.org>
  2007 Matthew Woehlke <mw_triad@users.sourceforge.net>
@@ -35,7 +35,7 @@ License: LGPL-2.0+
  On Debian systems, the complete text of the GNU Library General
  Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
 
-Files: 
+Files:
  kstyle/oxygenmdiwindowshadow.cpp
  kstyle/debug/oxygenwidgetexplorer.cpp
  kstyle/debug/oxygenwidgetexplorer.h

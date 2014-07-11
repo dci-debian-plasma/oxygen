@@ -2,25 +2,40 @@ Source: oxygen
 Priority: extra
 Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
 XSBC-Original-Maintainer: Scarlett Clark <scarlett@scarlettgatelyclark.com>
-Build-Depends: debhelper (>= 9.0.0), cmake, pkg-kde-tools,
- extra-cmake-modules (>= 1.0.0), pkg-kde-tools,
- libkf5i18n-dev (>= 5.0.0), libkf5config-dev (>= 4.100.0),
- libkf5guiaddons-dev (>= 5.0.0), libkf5widgetsaddons-dev (>= 4.100.0),
- libkf5service-dev (>= 5.0.0), libkf5completion-dev (>= 4.100.0),
- libkf5style-dev (>= 5.0.0), libkf5windowsystem-dev (>= 4.100.0),
- qtbase5-dev, libqt5x11extras5-dev, libx11-dev, libxcb1-dev,
- libkf5coreaddons-dev (>= 5.0.0), libkf5dbusaddons-dev (>= 4.100.0),
- libkf5configwidgets-dev (>= 5.0.0), libkf5iconthemes-dev (>= 4.100.0),
- libkf5auth-dev (>= 5.0.0), libkf5codecs-dev (>= 4.100.0),
- libkf5itemviews-dev (>= 5.0.0),
- kwin-dev (>= 4:5.0.0), pkg-config
+Build-Depends: cmake,
+               debhelper (>= 9.0.0),
+               extra-cmake-modules (>= 1.0.0),
+               kwin-dev (>= 4:5.0.0),
+               libkf5auth-dev (>= 5.0.0),
+               libkf5codecs-dev (>= 5.0.0),
+               libkf5completion-dev (>= 5.0.0),
+               libkf5config-dev (>= 5.0.0),
+               libkf5configwidgets-dev (>= 5.0.0),
+               libkf5coreaddons-dev (>= 5.0.0),
+               libkf5dbusaddons-dev (>= 5.0.0),
+               libkf5guiaddons-dev (>= 5.0.0),
+               libkf5i18n-dev (>= 5.0.0),
+               libkf5iconthemes-dev (>= 5.0.0),
+               libkf5itemviews-dev (>= 5.0.0),
+               libkf5service-dev (>= 5.0.0),
+               libkf5style-dev (>= 5.0.0),
+               libkf5widgetsaddons-dev (>= 5.0.0),
+               libkf5windowsystem-dev (>= 5.0.0),
+               libqt5x11extras5-dev,
+               libx11-dev,
+               libxcb1-dev,
+               pkg-config,
+               pkg-kde-tools,
+               qtbase5-dev
 Standards-Version: 3.9.5
 Section: kde
 Homepage: https://projects.kde.org/projects/kde/workspace/oxygen
+Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-packagers/kubuntu-packaging-next/oxygen
+Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging-next/oxygen
 
 Package: oxygen-sounds
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Sounds for the Oxygen desktop theme
  The Oxygen desktop theme is used by Plasma and other KDE Software.
  .
@@ -28,7 +43,7 @@ Description: Sounds for the Oxygen desktop theme
 
 Package: kwin-decoration-oxygen
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: KWin decoration for the Oxygen desktop theme
  The Oxygen desktop theme is used by Plasma and other KDE Software.
  .
@@ -36,7 +51,7 @@ Description: KWin decoration for the Oxygen desktop theme
 
 Package: kde-style-oxygen-qt5
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt decoration for the Oxygen desktop theme
  The Oxygen desktop theme is used by Plasma and other KDE Software.
  .
@@ -44,7 +59,7 @@ Description: Qt decoration for the Oxygen desktop theme
 
 Package: liboxygenstyle5-5
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: style library for the Oxygen desktop theme
  The Oxygen desktop theme is used by Plasma and other KDE Software.
  .
@@ -53,7 +68,7 @@ Description: style library for the Oxygen desktop theme
 
 Package: liboxygenstyleconfig5-5
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: style library configuration for the Oxygen desktop theme
  The Oxygen desktop theme is used by Plasma and other KDE Software.
  .
@@ -64,7 +79,7 @@ Package: oxygen-dbg
 Section: debug
 Architecture: any
 Recommends: qtbase5-dbg
-Depends: liboxygenstyleconfig5-5 (= ${binary:Version}) | 
+Depends: liboxygenstyleconfig5-5 (= ${binary:Version}) |
          liboxygenstyle5-5 (= ${binary:Version}) |
          kde-style-oxygen-qt5 (= ${binary:Version}) |
          kwin-decoration-oxygen (= ${binary:Version}),
