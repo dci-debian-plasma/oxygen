@@ -7,6 +7,7 @@ oxygen (4:5.0.0-0ubuntu1) UNRELEASED; urgency=medium
   * Fix depend versions
   * wrap-and-sort
   * Add Vcs 
+  * Update watch to http://download.kde.org 
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 10 Jul 2014 20:05:11 +0200
 
