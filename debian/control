@@ -25,7 +25,7 @@ Build-Depends: cmake,
                libx11-dev,
                libxcb1-dev,
                pkg-config,
-               pkg-kde-tools,
+               pkg-kde-tools (>= 0.15.15ubuntu1~),
                qtbase5-dev
 Standards-Version: 3.9.5
 Section: kde
