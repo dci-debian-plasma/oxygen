@@ -7,6 +7,8 @@ oxygen (4:5.0.95-0ubuntu1) UNRELEASED; urgency=medium
   * Add missing look-and-feel files to a new package.
   * Fix extra space in changelog causing lintian error.
   * wrap-and sort 
+  * Fix script-not-executable usr/share/plasma/look-and-feel/org.kde.oxygen/Messages.sh
+  * Override missing manpage lintian error. 
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 01 Oct 2014 15:28:27 +0200
 

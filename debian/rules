@@ -5,3 +5,7 @@ include /usr/share/pkg-kde-tools/qt-kde-team/3/debian-qt-kde.mk
 
 override_dh_strip:
 	$(overridden_command) --dbg-package=oxygen-dbg
+
+override_dh_fixperms:
+	chmod +x debian/oxygen-look-and-feel/usr/share/plasma/look-and-feel/org.kde.oxygen/Messages.sh
+	$(overridden_command)
