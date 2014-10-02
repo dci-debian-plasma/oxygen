@@ -1,1 +1,9 @@
-usr/share/plasma/look-and-feel/org.kde.oxygen
+usr/share/plasma/look-and-feel/org.kde.oxygen/contents/defaults
+usr/share/plasma/look-and-feel/org.kde.oxygen/contents/previews/preview.png
+usr/share/plasma/look-and-feel/org.kde.oxygen/contents/previews/splash.png
+usr/share/plasma/look-and-feel/org.kde.oxygen/contents/splash/images/background.png
+usr/share/plasma/look-and-feel/org.kde.oxygen/contents/splash/images/kde.png
+usr/share/plasma/look-and-feel/org.kde.oxygen/contents/splash/images/rectangle.png
+usr/share/plasma/look-and-feel/org.kde.oxygen/contents/splash/Splash.qml
+usr/share/plasma/look-and-feel/org.kde.oxygen/metadata.desktop
+

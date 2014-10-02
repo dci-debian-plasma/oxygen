@@ -12,6 +12,7 @@ oxygen (4:5.0.95-0ubuntu1) UNRELEASED; urgency=medium
   * Correct the filename for the lintian override.
   * Add usr/share/plasma/look-and-feel/org.kde.oxygen/Messages.sh
     - per HS this file is never to be installed. #339620 filed upstream.
+  * Actually remove the problem files from the install file.. 
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 01 Oct 2014 15:28:27 +0200
 
