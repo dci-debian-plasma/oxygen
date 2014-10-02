@@ -1,6 +1,12 @@
 oxygen (4:5.0.95-0ubuntu1) UNRELEASED; urgency=medium
 
+  [ Jonathan Riddell ]
   * New upstream beta release
+
+  [ Scarlett Clark ]
+  * Add missing look-and-feel files to a new package.
+  * Fix extra space in changelog causing lintian error.
+  * wrap-and sort 
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 01 Oct 2014 15:28:27 +0200
 
@@ -28,7 +34,7 @@ oxygen (4:5.0.1-0ubuntu1~ubuntu14.10~ppa2) utopic; urgency=medium
   [ Jonathan Riddell ]
   * New upstream bugfix release
 
- -- Jonathan Riddell <jriddell@ubuntu.com>   Sun, 10 Aug 2014 15:44:23 +0200
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Sun, 10 Aug 2014 15:44:23 +0200
 
 oxygen (4:4.98.0-0ubuntu1) utopic; urgency=medium
 

@@ -49,6 +49,14 @@ Description: KWin decoration for the Oxygen desktop theme
  .
  This package contains the KWin decoration and settings modules.
 
+Package: oxygen-look-and-feel
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Look-and-feel for the Oxygen desktop theme
+ The Oxygen desktop theme is used by Plasma and other KDE Software.
+ .
+ This package contains the Oxygen Look-and-Feel and settings modules.
+
 Package: kde-style-oxygen-qt5
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
@@ -79,10 +87,7 @@ Package: oxygen-dbg
 Section: debug
 Architecture: any
 Recommends: qtbase5-dbg
-Depends: liboxygenstyleconfig5-5 (= ${binary:Version}) |
-         liboxygenstyle5-5 (= ${binary:Version}) |
-         kde-style-oxygen-qt5 (= ${binary:Version}) |
-         kwin-decoration-oxygen (= ${binary:Version}),
+Depends: liboxygenstyleconfig5-5 (= ${binary:Version}) | liboxygenstyle5-5 (= ${binary:Version}) | kde-style-oxygen-qt5 (= ${binary:Version}) | kwin-decoration-oxygen (= ${binary:Version}),
          ${misc:Depends}
 Description: debugging symbols for the Oxygen desktop theme
  The Oxygen desktop theme is used by Plasma and other KDE Software.
