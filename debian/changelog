@@ -2,17 +2,14 @@ oxygen (4:5.0.95-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Jonathan Riddell ]
   * New upstream beta release
+  * Add upstream_dont-install-build-files.diff to not install unused files
 
   [ Scarlett Clark ]
   * Add missing look-and-feel files to a new package.
   * Fix extra space in changelog causing lintian error.
-  * wrap-and sort 
-  * Fix script-not-executable usr/share/plasma/look-and-feel/org.kde.oxygen/Messages.sh
-  * Override missing manpage lintian error. 
+  * wrap-and sort
+  * Override missing manpage lintian error.
   * Correct the filename for the lintian override.
-  * Add usr/share/plasma/look-and-feel/org.kde.oxygen/Messages.sh
-    - per HS this file is never to be installed. #339620 filed upstream.
-  * Actually remove the problem files from the install file.. 
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 01 Oct 2014 15:28:27 +0200
 

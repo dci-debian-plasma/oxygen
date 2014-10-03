@@ -451,7 +451,3 @@
 ./usr/share/icons/Oxygen_Zion/cursors/whats_this
 ./usr/share/icons/Oxygen_Zion/cursors/xterm
 ./usr/share/icons/Oxygen_Zion/index.theme
-
-#I am told never to be installed, bug filed upstream 339620.
-./usr/share/plasma/look-and-feel/org.kde.oxygen/Messages.sh
-./usr/share/plasma/look-and-feel/org.kde.oxygen/contents/splash/CMakeLists.txt
