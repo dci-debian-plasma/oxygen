@@ -1,0 +1,22 @@
+Description: don't install build files
+Author: Jonathan Riddell <jriddell@ubuntu.com>
+Origin: upstream
+Bug: https://bugs.kde.org/339620
+Applied-Upstream: http://commits.kde.org/oxygen/744ec0238716a47b2837157bb8d5ebd72a696d46
+Last-Update: 2014-10-03
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+Index: oxygen-5.0.95/CMakeLists.txt
+===================================================================
+--- oxygen-5.0.95.orig/CMakeLists.txt
++++ oxygen-5.0.95/CMakeLists.txt
+@@ -101,7 +101,8 @@ else()
+ 
+   add_subdirectory(sounds)
+ 
+-  install(DIRECTORY lookandfeel/ DESTINATION ${CMAKE_INSTALL_PREFIX}/share/plasma/look-and-feel/org.kde.oxygen)
++  install(DIRECTORY lookandfeel/ DESTINATION ${CMAKE_INSTALL_PREFIX}/share/plasma/look-and-feel/org.kde.oxygen
++          PATTERN "Messages.sh" EXCLUDE PATTERN "CMakeLists.txt" EXCLUDE)
+ 
+ endif()
+ 
