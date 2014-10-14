@@ -3,6 +3,8 @@ oxygen (4:5.1.0.1-0ubuntu1) UNRELEASED; urgency=medium
   [ Jonathan Riddell ]
   * New upstream release
   * Add upstream_dont-install-build-files.diff to not install unused files
+  * Rename oxygen-look-and-feel to plasma-theme-oxygen and make it depend
+    on other parts it expects
 
   [ Scarlett Clark ]
   * Add missing look-and-feel files to a new package.
@@ -10,10 +12,6 @@ oxygen (4:5.1.0.1-0ubuntu1) UNRELEASED; urgency=medium
   * wrap-and sort
   * Override missing manpage lintian error.
   * Correct the filename for the lintian override.
-
-  [ Jonathan Riddell ]
-  * New upstream release
-  * New upstream release with fixed tar
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 14 Oct 2014 13:50:05 +0200
 
