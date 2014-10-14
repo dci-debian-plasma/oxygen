@@ -5,6 +5,7 @@ oxygen (4:5.1.0.1-0ubuntu1) UNRELEASED; urgency=medium
   * Add upstream_dont-install-build-files.diff to not install unused files
   * Rename oxygen-look-and-feel to plasma-theme-oxygen and make it depend
     on other parts it expects
+  * Add dependency on kde-style-oxygen-qt4
 
   [ Scarlett Clark ]
   * Add missing look-and-feel files to a new package.

@@ -35,6 +35,7 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/plasma/oxygen.git
 Package: plasma-theme-oxygen
 Architecture: any
 Depends: kde-style-oxygen-qt5,
+         kde-style-oxygen-qt4,
          kwin-decoration-oxygen,
          oxygen-sounds,
          ${misc:Depends},
