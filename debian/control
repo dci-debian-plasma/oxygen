@@ -32,6 +32,20 @@ Homepage: https://projects.kde.org/projects/kde/workspace/oxygen
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/plasma/oxygen.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/plasma/oxygen.git
 
+Package: plasma-theme-oxygen
+Architecture: any
+Depends: kde-style-oxygen-qt5,
+         kwin-decoration-oxygen,
+         oxygen-sounds,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Breaks: oxygen-look-and-feel
+Replaces: oxygen-look-and-feel
+Description: Look-and-feel for the Oxygen desktop theme
+ The Oxygen desktop theme is used by Plasma and other KDE Software.
+ .
+ This package contains the meta settings for the Oxygen theme.
+
 Package: oxygen-sounds
 Architecture: all
 Depends: ${misc:Depends}, ${shlibs:Depends}
@@ -47,14 +61,6 @@ Description: KWin decoration for the Oxygen desktop theme
  The Oxygen desktop theme is used by Plasma and other KDE Software.
  .
  This package contains the KWin decoration and settings modules.
-
-Package: oxygen-look-and-feel
-Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Look-and-feel for the Oxygen desktop theme
- The Oxygen desktop theme is used by Plasma and other KDE Software.
- .
- This package contains the Oxygen Look-and-Feel and settings modules.
 
 Package: kde-style-oxygen-qt5
 Architecture: any
