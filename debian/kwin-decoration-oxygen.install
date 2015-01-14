@@ -1,4 +1,4 @@
 usr/bin/oxygen-settings5
 #usr/lib/*/qt5/plugins/kwin/kdecorations/config/kwin_oxygen_config.so
 #usr/lib/*/qt5/plugins/kwin/kdecorations/kwin3_oxygen.so
-#usr/share/locale/*/LC_MESSAGES/oxygen_kwin_deco.mo
+usr/share/locale/*/LC_MESSAGES/oxygen_kwin_deco.mo
