@@ -36,7 +36,6 @@ Package: plasma-theme-oxygen
 Architecture: any
 Depends: kde-style-oxygen-qt5,
          kde-style-oxygen-qt4,
-         kwin-decoration-oxygen,
          oxygen-sounds,
          ${misc:Depends},
          ${shlibs:Depends}
@@ -54,14 +53,6 @@ Description: Sounds for the Oxygen desktop theme
  The Oxygen desktop theme is used by Plasma and other KDE Software.
  .
  This package contains the sounds.
-
-Package: kwin-decoration-oxygen
-Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: KWin decoration for the Oxygen desktop theme
- The Oxygen desktop theme is used by Plasma and other KDE Software.
- .
- This package contains the KWin decoration and settings modules.
 
 Package: kde-style-oxygen-qt5
 Architecture: any
