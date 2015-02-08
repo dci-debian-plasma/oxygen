@@ -6,6 +6,7 @@ oxygen (4:5.2.0-1~) UNRELEASED; urgency=medium
   * Add myself as Uploader.
   * Also build the qt4 version.
   * Bump Standards-Version to 3.9.6, no changes needed.
+  * Update copyright information.
 
  -- Maximiliano Curia <maxy@debian.org>  Sun, 08 Feb 2015 16:11:00 +0100
 
