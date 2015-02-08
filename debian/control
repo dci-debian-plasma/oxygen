@@ -1,5 +1,6 @@
 Source: oxygen
-Priority: extra
+Section: kde
+Priority: optional
 Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Maximiliano Curia <maxy@debian.org>
 Build-Depends: cmake (>= 2.8.12),
@@ -22,7 +23,6 @@ Build-Depends: cmake (>= 2.8.12),
                pkg-kde-tools (>= 0.15.15ubuntu1~),
                qtbase5-dev
 Standards-Version: 3.9.5
-Section: kde
 Homepage: https://projects.kde.org/projects/kde/workspace/oxygen
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/plasma/oxygen.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/plasma/oxygen.git
@@ -77,10 +77,11 @@ Description: style library configuration for the Oxygen desktop theme
 
 Package: oxygen-dbg
 Section: debug
+Priority: extra
 Architecture: any
-Recommends: qtbase5-dbg
 Depends: liboxygenstyleconfig5-5 (= ${binary:Version}) | liboxygenstyle5-5 (= ${binary:Version}) | kde-style-oxygen-qt5 (= ${binary:Version}),
          ${misc:Depends}
+Recommends: qtbase5-dbg
 Description: debugging symbols for the Oxygen desktop theme
  The Oxygen desktop theme is used by Plasma and other KDE Software.
  .
