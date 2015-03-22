@@ -6,6 +6,7 @@ oxygen (4:5.2.2-0ubuntu1) UNRELEASED; urgency=medium
   * Re- remove kwin-decoration-oxygen package, it no longer builds
   * Remove missing file. 
   * Fix stubvar external package for removed package. 
+  * Add missing file. 
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Thu, 19 Mar 2015 15:12:01 -0700
 
