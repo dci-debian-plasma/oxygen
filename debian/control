@@ -24,7 +24,7 @@ Build-Depends: cmake (>= 2.8.12),
                qtbase5-dev
 Standards-Version: 3.9.6
 Homepage: https://projects.kde.org/projects/kde/workspace/oxygen
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/plasma/oxygen.git
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/plasma/oxygen.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/plasma/oxygen.git
 
 Package: plasma-theme-oxygen
