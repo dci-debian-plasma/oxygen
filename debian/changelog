@@ -5,6 +5,25 @@ oxygen (4:5.2.2-1~) UNRELEASED; urgency=medium
 
  -- Maximiliano Curia <maxy@debian.org>  Wed, 25 Mar 2015 09:58:48 +0100
 
+oxygen (4:5.2.2-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+  * Add oxygen_kwin_deco.mo files to not-installed due to
+    kwin-decoration-oxygen package being removed. 
+  * Re- remove kwin-decoration-oxygen package, it no longer builds
+  * Remove missing file. 
+  * Fix stubvar external package for removed package. 
+  * Add missing file. 
+  * Re add missing files to make ci happy.
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 24 Mar 2015 07:37:03 -0700
+
+oxygen (4:5.2.1-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 23 Feb 2015 09:45:33 -0800
+
 oxygen (4:5.2.0-1) experimental; urgency=medium
 
   * Prepare initial Debian release.
