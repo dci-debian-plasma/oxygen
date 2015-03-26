@@ -1,3 +1,9 @@
+oxygen (4:5.2.2-0ubuntu2) vivid; urgency=medium
+
+  * Fix kde-style-oxygen-qt5.install
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 25 Mar 2015 00:11:23 +0100
+
 oxygen (4:5.2.2-0ubuntu1) vivid; urgency=medium
 
   * New upstream release
