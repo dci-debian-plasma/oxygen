@@ -3,5 +3,3 @@ usr/lib/*/qt5/plugins/styles/oxygen.so
 usr/share/kstyle/themes/oxygen.themerc
 usr/share/locale/*/LC_MESSAGES/oxygen_style_config.mo
 usr/share/locale/*/LC_MESSAGES/oxygen_style_demo.mo
-usr/lib/*/qt5/plugins/org.kde.kdecoration2/oxygendecoration.so
-usr/share/kservices5/oxygenstyleconfig.desktop
