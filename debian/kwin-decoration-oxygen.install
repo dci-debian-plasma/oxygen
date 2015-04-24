@@ -1,2 +1,3 @@
 usr/lib/*/qt5/plugins/org.kde.kdecoration2/oxygendecoration.so
 usr/share/locale/*/LC_MESSAGES/oxygen_kwin_deco.mo
+usr/share/locale/*/LC_MESSAGES/oxygen_kdecoration.mo
