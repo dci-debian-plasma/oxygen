@@ -1,14 +1,5 @@
 oxygen (4:5.3.1-0ubuntu1) UNRELEASED; urgency=medium
 
-  [ Jonathan Riddell ]
-  * Plasma 5.3 beta
-  * new upstream release
-  * new upstream release
-
-  [ Scarlett Clark ]
-  * Vivid backport
-
-  [ Jonathan Riddell ]
   * New upstream release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 04 Jun 2015 20:31:53 +0200
