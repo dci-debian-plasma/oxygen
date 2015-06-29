@@ -1,6 +1,8 @@
 #demo files
 ./usr/bin/oxygen-shadow-demo5
 ./usr/bin/oxygen-demo5
+./usr/lib/liboxygenstyleconfig.so
+./usr/lib/liboxygenstyle.so
 ./usr/lib/i386-linux-gnu/liboxygenstyle5.so
 ./usr/lib/i386-linux-gnu/liboxygenstyleconfig5.so
 ./usr/lib/x86_64-linux-gnu/liboxygenstyle5.so
