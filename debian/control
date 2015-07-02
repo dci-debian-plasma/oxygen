@@ -98,6 +98,8 @@ Description: style library for the Oxygen desktop theme
 Package: liboxygenstyleconfig5-5
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: kde-style-oxygen-qt5 (<< 4:5.3.2~)
+Replaces: kde-style-oxygen-qt5 (<< 4:5.3.2~)
 Description: style library configuration for the Oxygen desktop theme
  The Oxygen desktop theme is used by Plasma and other KDE Software.
  .
