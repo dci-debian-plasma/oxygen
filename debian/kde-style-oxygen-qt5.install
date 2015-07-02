@@ -2,7 +2,6 @@ usr/bin/oxygen-settings5
 usr/lib/*/qt5/plugins/kstyle_oxygen_config.so
 usr/lib/*/qt5/plugins/styles/oxygen.so
 usr/share/kservices5/oxygenstyleconfig.desktop
-usr/share/kservices5/oxygenstyleconfig.desktop
 usr/share/kstyle/themes/oxygen.themerc
 usr/share/locale/*/*/oxygen_style_config.mo
 usr/share/locale/*/*/oxygen_style_demo.mo
