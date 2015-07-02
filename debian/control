@@ -1,45 +1,41 @@
 Source: oxygen
-Priority: extra
+Section: kde
+Priority: optional
 Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Build-Depends: cmake,
-               debhelper (>= 9.0.0),
+Uploaders: Maximiliano Curia <maxy@debian.org>
+Build-Depends: cmake (>= 2.8.12),
+               debhelper (>= 9),
                extra-cmake-modules (>= 1.3.0~),
-               kwin-dev (>= 4:5.3.2),
-               libkdecorations2-dev (>= 4:5.2.0),
-               libkf5auth-dev (>= 5.2.0),
-               libkf5codecs-dev (>= 5.2.0),
+               kdelibs5-dev (>= 4.9.80),
+               kwin-dev (>= 4:5.2.2),
+               libkdecorations2-dev,
                libkf5completion-dev (>= 5.2.0),
                libkf5config-dev (>= 5.2.0),
-               libkf5configwidgets-dev (>= 5.2.0),
-               libkf5coreaddons-dev (>= 5.2.0),
-               libkf5dbusaddons-dev (>= 5.2.0),
+               libkf5configwidgets-dev,
+               libkf5coreaddons-dev,
                libkf5guiaddons-dev (>= 5.2.0),
                libkf5i18n-dev (>= 5.2.0),
-               libkf5iconthemes-dev (>= 5.2.0),
-               libkf5itemviews-dev (>= 5.2.0),
-               libkf5kcmutils-dev (>= 5.2.0),
                libkf5service-dev (>= 5.2.0),
                libkf5style-dev (>= 5.2.0),
                libkf5widgetsaddons-dev (>= 5.2.0),
                libkf5windowsystem-dev (>= 5.2.0),
-               libqt5x11extras5-dev,
+               libqt5x11extras5-dev (>= 5.4),
                libx11-dev,
                libxcb1-dev,
                pkg-config,
                pkg-kde-tools (>= 0.15.15ubuntu1~),
-               qtbase5-dev
-Standards-Version: 3.9.5
-Section: kde
+               qtbase5-dev (>= 5.4)
+Standards-Version: 3.9.6
 Homepage: https://projects.kde.org/projects/kde/workspace/oxygen
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/plasma/oxygen.git
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/plasma/oxygen.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/plasma/oxygen.git
 
 Package: plasma-theme-oxygen
 Architecture: any
-Depends: kde-style-oxygen-qt4,
-         kde-style-oxygen-qt5,
-         kwin-decoration-oxygen,
-         oxygen-sounds,
+Depends: kde-style-oxygen-qt4 (= ${binary:Version}),
+         kde-style-oxygen-qt5 (= ${binary:Version}),
+         kwin-decoration-oxygen (= ${binary:Version}),
+         oxygen-sounds (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: oxygen-look-and-feel
@@ -79,6 +75,17 @@ Description: Qt decoration for the Oxygen desktop theme
  .
  This package contains the Qt 5 widget theme.
 
+Package: kde-style-oxygen-qt4
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: kde-style-oxygen
+Replaces: kde-style-oxygen
+Description: Qt 4 decoration for the Oxygen desktop theme
+ The Oxygen desktop theme is used by Plasma and other KDE Software.
+ .
+ This is the version shipped with Plasma 5. This package contains the
+ Qt 4 widget theme.
+
 Package: liboxygenstyle5-5
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
@@ -99,10 +106,11 @@ Description: style library configuration for the Oxygen desktop theme
 
 Package: oxygen-dbg
 Section: debug
+Priority: extra
 Architecture: any
-Recommends: qtbase5-dbg
 Depends: liboxygenstyleconfig5-5 (= ${binary:Version}) | liboxygenstyle5-5 (= ${binary:Version}) | kde-style-oxygen-qt5 (= ${binary:Version}) | kwin-decoration-oxygen (= ${binary:Version}),
          ${misc:Depends}
+Recommends: qtbase5-dbg
 Description: debugging symbols for the Oxygen desktop theme
  The Oxygen desktop theme is used by Plasma and other KDE Software.
  .
