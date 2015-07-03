@@ -25,7 +25,7 @@ Build-Depends: cmake (>= 2.8.12),
                libx11-dev,
                libxcb1-dev,
                pkg-config,
-               pkg-kde-tools (>= 0.15.15ubuntu1~),
+               pkg-kde-tools (>= 0.15.18~),
                qtbase5-dev (>= 5.4)
 Standards-Version: 3.9.6
 Homepage: https://projects.kde.org/projects/kde/workspace/oxygen
@@ -100,8 +100,10 @@ Description: style library for the Oxygen desktop theme
 Package: liboxygenstyleconfig5-5
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: kde-style-oxygen-qt5 (<< 4:5.3.2-2~)
-Replaces: kde-style-oxygen-qt5 (<< 4:5.3.2-2~)
+Breaks: kde-style-oxygen-qt5 (<< 4:5.3.2-2~),
+        ${kde-l10n:all}
+Replaces: kde-style-oxygen-qt5 (<< 4:5.3.2-2~),
+          ${kde-l10n:all}
 Description: style library configuration for the Oxygen desktop theme
  The Oxygen desktop theme is used by Plasma and other KDE Software.
  .

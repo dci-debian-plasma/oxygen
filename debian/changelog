@@ -1,6 +1,6 @@
 oxygen (4:5.3.2-3~) UNRELEASED; urgency=medium
 
-  * 
+  * Add the missing Breaks/Replaces.
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 03 Jul 2015 13:33:27 +0200
 
