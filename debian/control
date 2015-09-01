@@ -80,8 +80,8 @@ Description: Qt decoration for the Oxygen desktop theme
 Package: kde-style-oxygen-qt4
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: kde-style-oxygen
-Replaces: kde-style-oxygen
+Breaks: kde-style-oxygen (<< 4:5)
+Replaces: kde-style-oxygen (<< 4:5)
 Description: Qt 4 decoration for the Oxygen desktop theme
  The Oxygen desktop theme is used by Plasma and other KDE Software.
  .
@@ -121,3 +121,11 @@ Description: debugging symbols for the Oxygen desktop theme
  The Oxygen desktop theme is used by Plasma and other KDE Software.
  .
  This package contains the debugging symbols.
+
+Package: kde-style-oxygen
+Section: oldlibs
+Priority: extra
+Architecture: all
+Depends: kde-style-oxygen-qt4, ${misc:Depends}
+Description: transitional dummy package
+ This is a transitional dummy package. It can safely be removed.
