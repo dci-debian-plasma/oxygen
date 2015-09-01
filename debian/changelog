@@ -1,10 +1,11 @@
-oxygen (4:5.3.2-4) UNRELEASED; urgency=medium
+oxygen (4:5.3.2-4) unstable; urgency=medium
 
+  * Team upload.
   * Add a transitional package for kde-style-oxygen.
   * Add a symlink for kde-style-oxygen-qt4 in the qt4 plugins dirs.
     (Closes: #794754)
 
- -- Felix Geyer <fgeyer@debian.org>  Tue, 01 Sep 2015 22:04:30 +0200
+ -- Felix Geyer <fgeyer@debian.org>  Tue, 01 Sep 2015 22:44:08 +0200
 
 oxygen (4:5.3.2-3) unstable; urgency=medium
 
