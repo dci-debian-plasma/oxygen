@@ -1,3 +1,5 @@
+usr/bin/oxygen-settings5
+usr/share/icons/hicolor/256x256/apps/oxygen-settings.png
 usr/lib/*/qt5/plugins/kstyle_oxygen_config.so
 usr/lib/*/qt5/plugins/styles/oxygen.so
 usr/share/kstyle/themes/oxygen.themerc
