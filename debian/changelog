@@ -1,4 +1,4 @@
-oxygen (4:5.5.3-0ubuntu1) UNRELEASED; urgency=medium
+oxygen (4:5.5.4-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Scarlett Clark ]
   * New upstream release Xenial
@@ -11,7 +11,10 @@ oxygen (4:5.5.3-0ubuntu1) UNRELEASED; urgency=medium
   [ Scarlett Clark ]
   * Debian merge, No remaining changes. 
 
- -- Clive Johnston <clivejo@aol.com>  Thu, 07 Jan 2016 17:59:07 +0000
+  [ Clive Johnston ]
+  * New upstream release
+
+ -- Clive Johnston <clivejo@aol.com>  Wed, 27 Jan 2016 20:14:57 +0000
 
 oxygen (4:5.4.3-1) unstable; urgency=medium
 
