@@ -27,4 +27,4 @@ override_dh_auto_install:
 	ln -s /usr/lib/kde4/plugins/styles/oxygen.so debian/kde-style-oxygen-qt4/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/plugins/styles/
 
 override_dh_strip:
-	$(overridden_command) --dbg-package=oxygen-dbg
+	$(overridden_command) --dbgsym-migration='oxygen-dbg (<= 4:5.5.5-1~~)'

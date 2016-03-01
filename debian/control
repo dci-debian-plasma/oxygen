@@ -109,18 +109,6 @@ Description: style library configuration for the Oxygen desktop theme
  This package contains the private library used to configure the widget theme
  and KWin style.
 
-Package: oxygen-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: liboxygenstyleconfig5-5 (= ${binary:Version}) | liboxygenstyle5-5 (= ${binary:Version}) | kde-style-oxygen-qt5 (= ${binary:Version}) | kwin-decoration-oxygen (= ${binary:Version}),
-         ${misc:Depends}
-Recommends: qtbase5-dbg
-Description: debugging symbols for the Oxygen desktop theme
- The Oxygen desktop theme is used by Plasma and other KDE Software.
- .
- This package contains the debugging symbols.
-
 Package: kde-style-oxygen
 Section: oldlibs
 Priority: extra
