@@ -40,6 +40,7 @@ Depends: kde-style-oxygen-qt4 (= ${binary:Version}),
          kde-style-oxygen-qt5 (= ${binary:Version}),
          kwin-decoration-oxygen (= ${binary:Version}),
          oxygen-sounds (= ${source:Version}),
+         qml-module-qtquick2,
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: oxygen-look-and-feel
