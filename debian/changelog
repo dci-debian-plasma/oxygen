@@ -1,10 +1,8 @@
-oxygen (4:5.8.1-1~1.gbpa935bb) UNRELEASED; urgency=medium
+oxygen (4:5.8.1-1) unstable; urgency=medium
 
-  ** SNAPSHOT build @a935bb4405cad6f9651a2df4447febde1c2aa066 **
+  * New upstream release (5.8.1)
 
-  * UNRELEASED
-
- -- Maximiliano Curia <jenkins@gnuservers.com.ar>  Thu, 13 Oct 2016 18:21:23 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 16 Oct 2016 23:01:11 +0200
 
 oxygen (4:5.8.0-1) unstable; urgency=medium
 
