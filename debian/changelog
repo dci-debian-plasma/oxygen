@@ -1,3 +1,11 @@
+oxygen (4:5.8.2-1~1.gbp0dfe0e) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @0dfe0e8229ef9bba293658c36c01fb6199f74afd **
+
+  * UNRELEASED
+
+ -- Maximiliano Curia <jenkins@gnuservers.com.ar>  Tue, 18 Oct 2016 18:21:03 +0200
+
 oxygen (4:5.8.1-1) unstable; urgency=medium
 
   * New upstream release (5.8.1)
