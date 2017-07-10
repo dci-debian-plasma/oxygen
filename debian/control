@@ -27,7 +27,8 @@ Build-Depends: cmake (>= 2.8.12),
                libxcb1-dev,
                pkg-config,
                pkg-kde-tools (>= 0.15.18~),
-               qtbase5-dev (>= 5.4)
+               qtbase5-dev (>= 5.4),
+               qtdeclarative5-dev
 Standards-Version: 3.9.8
 Homepage: https://projects.kde.org/projects/kde/workspace/oxygen
 Vcs-Browser: https://anonscm.debian.org/git/pkg-kde/plasma/oxygen.git
