@@ -28,58 +28,20 @@ Build-Depends: cmake (>= 2.8.12),
                pkg-config,
                pkg-kde-tools (>= 0.15.18~),
                qtbase5-dev (>= 5.4),
-               qtdeclarative5-dev
+               qtdeclarative5-dev,
 Standards-Version: 4.0.0
 Homepage: https://projects.kde.org/projects/kde/workspace/oxygen
 Vcs-Browser: https://anonscm.debian.org/git/pkg-kde/plasma/oxygen.git
 Vcs-Git: https://anonscm.debian.org/git/pkg-kde/plasma/oxygen.git
 
-Package: plasma-theme-oxygen
-Architecture: any
-Depends: kde-style-oxygen-qt4 (= ${binary:Version}),
-         kde-style-oxygen-qt5 (= ${binary:Version}),
-         kwin-decoration-oxygen (= ${binary:Version}),
-         oxygen-sounds (= ${source:Version}),
-         qml-module-qtquick2,
-         ${misc:Depends},
-         ${shlibs:Depends}
-Breaks: oxygen-look-and-feel
-Replaces: oxygen-look-and-feel
-Description: Look-and-feel for the Oxygen desktop theme
- The Oxygen desktop theme is used by Plasma and other KDE Software.
- .
- This package contains the meta settings for the Oxygen theme.
-
-Package: oxygen-sounds
+Package: kde-style-oxygen
+Section: oldlibs
+Priority: extra
 Architecture: all
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Sounds for the Oxygen desktop theme
- The Oxygen desktop theme is used by Plasma and other KDE Software.
- .
- This package contains the sounds.
-Breaks: plasma-desktop (<< 4:5.10)
-
-Package: kwin-decoration-oxygen
-Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: kde-style-oxygen-qt5 (<< 4:5.2.2+git20150326)
-Replaces: kde-style-oxygen-qt5 (<< 4:5.2.2+git20150326)
-Description: KWin decoration for the Oxygen desktop theme
- The Oxygen desktop theme is used by Plasma and other KDE Software.
- .
- This package contains the KWin decoration and settings modules.
-
-Package: kde-style-oxygen-qt5
-Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: kwin-decoration-oxygen (<< 4:5.2.2+git20150326),
-        plasma-theme-oxygen (<< 4:5.2.2+git20150326)
-Replaces: kwin-decoration-oxygen (<< 4:5.2.2+git20150326),
-          plasma-theme-oxygen (<< 4:5.2.2+git20150326)
-Description: Qt decoration for the Oxygen desktop theme
- The Oxygen desktop theme is used by Plasma and other KDE Software.
- .
- This package contains the Qt 5 widget theme.
+Depends: kde-style-oxygen-qt4, ${misc:Depends}
+Description: transitional dummy package
+ This is a transitional dummy package. It can safely be removed.
+Breaks: kde-window-manager (<< 4:5.8)
 
 Package: kde-style-oxygen-qt4
 Architecture: any
@@ -91,6 +53,28 @@ Description: Qt 4 decoration for the Oxygen desktop theme
  .
  This is the version shipped with Plasma 5. This package contains the
  Qt 4 widget theme.
+
+Package: kde-style-oxygen-qt5
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: kwin-decoration-oxygen (<< 4:5.2.2+git20150326),
+        plasma-theme-oxygen (<< 4:5.2.2+git20150326),
+Replaces: kwin-decoration-oxygen (<< 4:5.2.2+git20150326),
+          plasma-theme-oxygen (<< 4:5.2.2+git20150326),
+Description: Qt decoration for the Oxygen desktop theme
+ The Oxygen desktop theme is used by Plasma and other KDE Software.
+ .
+ This package contains the Qt 5 widget theme.
+
+Package: kwin-decoration-oxygen
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: kde-style-oxygen-qt5 (<< 4:5.2.2+git20150326)
+Replaces: kde-style-oxygen-qt5 (<< 4:5.2.2+git20150326)
+Description: KWin decoration for the Oxygen desktop theme
+ The Oxygen desktop theme is used by Plasma and other KDE Software.
+ .
+ This package contains the KWin decoration and settings modules.
 
 Package: liboxygenstyle5-5
 Architecture: any
@@ -112,11 +96,27 @@ Description: style library configuration for the Oxygen desktop theme
  This package contains the private library used to configure the widget theme
  and KWin style.
 
-Package: kde-style-oxygen
-Section: oldlibs
-Priority: extra
+Package: oxygen-sounds
 Architecture: all
-Depends: kde-style-oxygen-qt4, ${misc:Depends}
-Description: transitional dummy package
- This is a transitional dummy package. It can safely be removed.
-Breaks: kde-window-manager (<< 4:5.8)
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Sounds for the Oxygen desktop theme
+ The Oxygen desktop theme is used by Plasma and other KDE Software.
+ .
+ This package contains the sounds.
+Breaks: plasma-desktop (<< 4:5.10)
+
+Package: plasma-theme-oxygen
+Architecture: any
+Depends: kde-style-oxygen-qt4 (= ${binary:Version}),
+         kde-style-oxygen-qt5 (= ${binary:Version}),
+         kwin-decoration-oxygen (= ${binary:Version}),
+         oxygen-sounds (= ${source:Version}),
+         qml-module-qtquick2,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Breaks: oxygen-look-and-feel
+Replaces: oxygen-look-and-feel
+Description: Look-and-feel for the Oxygen desktop theme
+ The Oxygen desktop theme is used by Plasma and other KDE Software.
+ .
+ This package contains the meta settings for the Oxygen theme.
