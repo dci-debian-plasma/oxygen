@@ -36,7 +36,7 @@ Vcs-Git: https://anonscm.debian.org/git/pkg-kde/plasma/oxygen.git
 
 Package: kde-style-oxygen
 Section: oldlibs
-Priority: extra
+Priority: optional
 Architecture: all
 Depends: kde-style-oxygen-qt4, ${misc:Depends}
 Description: transitional dummy package
