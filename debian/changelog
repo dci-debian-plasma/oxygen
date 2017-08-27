@@ -1,4 +1,4 @@
-oxygen (4:5.10.4-1~) UNRELEASED; urgency=medium
+oxygen (4:5.10.5-1~) UNRELEASED; urgency=medium
 
   [ Maximiliano Curia ]
   * New upstream release (5.10.3).
@@ -7,6 +7,9 @@ oxygen (4:5.10.4-1~) UNRELEASED; urgency=medium
   * Update upstream metadata
   * Bump group breaks (5.10)
   * New upstream release (5.10.4).
+  * Update build-deps and deps with the info from cmake
+  * Set Priority to optional
+  * New upstream release (5.10.5).
 
   [ Jonathan Riddell ]
   * update watch file to version=4 with pgp signature checking
@@ -14,7 +17,7 @@ oxygen (4:5.10.4-1~) UNRELEASED; urgency=medium
   [ Harald Sitter ]
   * add qml dependency as detected by CI
 
- -- Maximiliano Curia <maxy@debian.org>  Thu, 17 Aug 2017 13:33:45 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 27 Aug 2017 12:52:18 +0200
 
 oxygen (4:5.8.5-1) experimental; urgency=medium
 
