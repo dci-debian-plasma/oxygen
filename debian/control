@@ -114,7 +114,7 @@ Description: style library configuration for the Oxygen desktop theme
 
 Package: oxygen-dbg
 Section: debug
-Priority: extra
+Priority: optional
 Architecture: any
 Depends: liboxygenstyleconfig5-5 (= ${binary:Version}) | liboxygenstyle5-5 (= ${binary:Version}) | kde-style-oxygen-qt5 (= ${binary:Version}) | kwin-decoration-oxygen (= ${binary:Version}),
          ${misc:Depends}
@@ -131,3 +131,4 @@ Architecture: all
 Depends: kde-style-oxygen-qt4, ${misc:Depends}
 Description: transitional dummy package
  This is a transitional dummy package. It can safely be removed.
+
