@@ -4,27 +4,31 @@
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 l10npkgs_firstversion_ok := 4:4.14.0-2
-
-include /usr/share/pkg-kde-tools/qt-kde-team/3/debian-qt-kde.mk
 include /usr/share/pkg-kde-tools/qt-kde-team/2/l10n-packages.mk
 
+%:
+	dh $@ --with kf5,pkgkde_symbolshelper --buildsystem kf5
+
 override_dh_auto_clean:
-	$(overridden_command) --builddirectory=build-qt4
-	$(overridden_command)
+	dh_auto_clean --builddirectory=build-qt4
+	dh_auto_clean
 
 override_dh_auto_configure:
-	$(overridden_command) --builddirectory=build-qt4 -- -DUSE_KDE4=true
-	$(overridden_command)
+	dh_auto_configure --builddirectory=build-qt4 -- -DUSE_KDE4=true
+	dh_auto_configure
 
 override_dh_auto_build:
-	$(overridden_command) --builddirectory=build-qt4
-	$(overridden_command)
+	dh_auto_build --builddirectory=build-qt4
+	dh_auto_build
 
 override_dh_auto_install:
-	$(overridden_command) --builddirectory=build-qt4
-	$(overridden_command)
+	dh_auto_install --builddirectory=build-qt4
+	dh_auto_install
 	mkdir -p debian/kde-style-oxygen-qt4/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/plugins/styles/
 	ln -s /usr/lib/kde4/plugins/styles/oxygen.so debian/kde-style-oxygen-qt4/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/plugins/styles/
 
 override_dh_strip:
-	$(overridden_command) --dbgsym-migration='oxygen-dbg (<= 4:5.5.5-1~~)'
+	dh_strip --dbgsym-migration='oxygen-dbg (<= 4:5.5.5-1~~)'
+
+override_dh_gencontrol: l10npkgs_firstversion_ok
+	dh_gencontrol
