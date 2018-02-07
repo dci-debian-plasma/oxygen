@@ -103,7 +103,7 @@ Description: Sounds for the Oxygen desktop theme
  The Oxygen desktop theme is used by Plasma and other KDE Software.
  .
  This package contains the sounds.
-Breaks: plasma-desktop (<< 4:5.11)
+Breaks: plasma-desktop (<< 4:5.12)
 
 Package: plasma-theme-oxygen
 Architecture: any
